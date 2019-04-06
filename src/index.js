@@ -1,12 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App/App';
 
-const App = () => {
-    return (
-        <div>
-            <h2>Mayank's Portfolio Will appear here.</h2>
-        </div>
-    )
-};
+
 
 ReactDOM.render(<App />, document.querySelector("#root"));

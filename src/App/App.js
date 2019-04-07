@@ -7,7 +7,7 @@ import { Skill } from './components/skill/skill';
 
 const App = () => {
     return (
-        <div className="wrapper">
+        <div className="ui grid">
             <About/>
             <Project />
             <Experience />

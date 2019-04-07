@@ -1,27 +1,49 @@
 import React from 'react';
-import './skills.css'
+import mongoDB_logo from './logos/mongodb.svg';
 
-export const Skill = () => {
+const skillStyle={
+    padding: '0.5% 3% 3% 0.5%',
+}
+
+const skills = [
+    {
+        logo: <div style={{color: '#F0DB4F'}} ><i className="fab fa-js fa-4x"></i></div>,
+        name: 'Javascript',
+        alt: 'Javascript_logo'
+    },
+    {
+        logo: <div style={{color: '#68A063'}}><i className="fab fa-node-js fa-4x"></i></div>,
+        name: 'NodeJS',
+        alt: 'NodeJS_logo'
+    },
+    {
+        logo: <div style={{color: '#61DBFB'}} ><i className="fab fa-react fa-4x"></i></div>,
+        name: 'React',
+        alt: 'React_logo'
+    },
+    {
+        logo: <img className="ui large image" src={mongoDB_logo} alt="mongoDB"/>,
+        name: 'MongoDB',
+        alt: 'MongoDB_logo'
+    }
+]
+
+export const Skill = (props) => {
+    const skillsView = skills.map(skill => {
+        return (
+            <div className="four wide column">
+                {skill.logo}
+            </div>
+        )
+    })
+    const { columnWidth, backgroundStyle} = props
     return (
-        <div className="skill">
-            <center>
-                <h1>Skills</h1>
-            </center>
-            <div className="skills-wrapper">
-                <div className="javascript">
-                    <center>Javascript</center>
-                </div>
-                <div className="nodejs">
-                    <center>Nodejs</center>
-                </div>
-                <div className="mongodb">
-                    <center>MongoDB</center>
-                </div>
-                <div className="react">
-                    <center>React</center>
-                </div>
-                <div className="AngularJS">
-                    <center>AngularJS</center>
+        <div className={columnWidth} style={skillStyle}>
+            <div className="ui segment" style={backgroundStyle}>
+                <h3 className="ui header" style={{color: 'white'}}>Skills</h3>
+                <div className="ui divider"></div>
+                <div className="ui grid">
+                    {skillsView}
                 </div>
             </div>
         </div>

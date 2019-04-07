@@ -1,0 +1,28 @@
+.about-section {
+  padding: 6%;
+}
+
+.social-icon {
+  padding-left: 1vw;
+}
+
+.about-description {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.about-image {
+  margin-top: 3vh;
+}
+
+@media (max-width: 425px) {
+  .social-icon {
+    font-size: 7vw;
+    padding-left: 0vw;
+  }
+
+  .about{
+      margin-top:24px !important;
+  }
+
+}

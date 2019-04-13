@@ -6,19 +6,6 @@ import { About } from './components/about/about.component';
 import { Project } from './components/projects/projects.component';
 import { Experience } from './components/experience/experience'
 import { Skill } from './components/skill/skill';
-
-// const particlesOptions = {
-//     particles: {
-//         number: {
-//             value: 80,
-//             density: {
-//                 enable: true,
-//                 value_area: 800
-//             }
-//         }
-//     }
-// }
-
 class App extends Component {
     render() {
         const columnWidth = "sixteen wide tablet eight wide computer column";

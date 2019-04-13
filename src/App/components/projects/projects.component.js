@@ -42,39 +42,6 @@ export const Project = (props) => {
                     </div>
                 </div>
             </div>
-
-            {/* <div className="ui segment">
-                <h3 className="ui header">Projects</h3>
-                <div className="ui divider"></div>
-                <h3 className="ui header">
-                    <div className="content head-project">
-                        <a href="http://dashboard.insightheroes.co/">Insight Heroes</a>
-                        <div className="sub header">Online Survey Platform</div>
-                    </div>
-                </h3>
-                <div className="sub header project-description">
-                <p>Implemented a chat bot for taking surveys and integrating it with Insight Heroes Backend.</p>
-                    <div className="ui horizontal bulleted link list">
-                        <span className="item">Node.js</span>
-                        <span className="item">MongoDB</span>
-                        <span className="item">Google Dialog Flow</span>
-                    </div>
-                </div>
-                <h3 className="ui header">
-                    <div className="content head-project">
-                        <a href="https://tranquil-taiga-89202.herokuapp.com/#!/">Customer Support</a>
-                        <div className="sub header">A ticket based Support System</div>
-                    </div>
-                </h3>
-                <div className="sub header project-description">
-                A Generic Ticket Based Support system for resolving queries on any platform
-                    <div className="ui horizontal bulleted link list">
-                        <span className="item">Node.js</span>
-                        <span className="item">MongoDB</span>
-                        <span className="item">AngularJS</span>
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }

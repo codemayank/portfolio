@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import './App.css';
+import ParticleOptions from './assets/particles.json'
 import { About } from './components/about/about.component';
 import { Project } from './components/projects/projects.component';
 import { Experience } from './components/experience/experience'

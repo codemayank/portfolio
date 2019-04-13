@@ -7,39 +7,42 @@ const skillStyle={
 
 const skills = [
     {
-        logo: <div style={{color: '#F0DB4F'}} ><i class="fab fa-js fa-7x"></i></div>,
+        logo: <div style={{color: '#F0DB4F'}} ><i className="fab fa-js fa-4x"></i></div>,
         name: 'Javascript',
         alt: 'Javascript_logo'
     },
     {
-        logo: <div style={{color: '#68A063'}}><i class="fab fa-node-js fa-7x"></i></div>,
+        logo: <div style={{color: '#68A063'}}><i className="fab fa-node-js fa-4x"></i></div>,
         name: 'NodeJS',
         alt: 'NodeJS_logo'
     },
     {
-        logo: <div style={{color: '#61DBFB'}} ><i class="fab fa-react fa-7x"></i></div>,
+        logo: <div style={{color: '#61DBFB'}} ><i className="fab fa-react fa-4x"></i></div>,
         name: 'React',
         alt: 'React_logo'
     },
     {
-        logo: <img className="ui medium image" src={mongoDB_logo} alt="mongoDB"/>,
+        logo: <img className="ui large image" src={mongoDB_logo} alt="mongoDB"/>,
         name: 'MongoDB',
         alt: 'MongoDB_logo'
     }
 ]
 
-export const Skill = () => {
+export const Skill = (props) => {
     const skillsView = skills.map(skill => {
         return (
-            <div className="six wide column">
+            <div className="four wide column">
+
                 {skill.logo}
             </div>
         )
     })
+    const { columnWidth, backgroundStyle} = props
     return (
-        <div className="eight wide column" style={skillStyle}>
-            <div className="ui segment">
-                <h3 className="ui header">Skills</h3>
+        <div className={columnWidth} style={skillStyle}>
+            <div className="ui segment" style={backgroundStyle}>
+                <h3 className="ui header" style={{color: 'white'}}>Skills</h3>
+
                 <div className="ui divider"></div>
                 <div className="ui grid">
                     {skillsView}

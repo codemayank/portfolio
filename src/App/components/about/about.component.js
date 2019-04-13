@@ -3,46 +3,46 @@ import './about.css';
 
 const aboutStyle = {
     'padding': '3%',
-    'padding-bottom': '0.5%'
+    'paddingBottom': '0.5%',
 }
-export const About = () => {
+
+export const About = (props) => {
+    const { columnWidth, backgroundStyle} = props
     return (
-        <div className="six wide column" style={aboutStyle}>
-            <div className="ui segment">
-                <div class="ui grid">
-                    <h1 className="eight wide column ui header">
-                        Mayank
+        <div className={columnWidth} style={aboutStyle}>
+            <div className="ui segment about" style={backgroundStyle}>
+                <div className="ui grid about-head">
+                    <h1 className="eight wide column ui header" style={{color: 'white'}}>
+                        Hi, I'm Mayank
                     </h1>
                     <div className="eight wide column ui horizontal list social-links">
                         <div className="item">
-                            <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://twitter.com/ma112" target="blank"><i className="fab fa-twitter fa-2x social-icon"></i></a>
                         </div>
                         <div className="item">
-                            <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+                            <a href="www.linkedin.com/in/mayank-yadav-a9493b34" target="blank"><i className="fab fa-linkedin-in fa-2x social-icon"></i></a>
                         </div>
                         <div className="item">
-                            <a href=""><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://github.com/codemayank" target="blank"><i className="fab fa-github fa-2x social-icon"></i></a>
                         </div>
                         <div className="item">
-                            <a href=""><i class="far fa-envelope fa-2x"></i></a>
+                            <a href="mailto:mayankyadav14@gmail.com"><i className="far fa-envelope fa-2x social-icon"></i></a>
                         </div>
                     </div>
                 </div>
-                <picture className="about-image">
-                    <img className="ui centered small circular image" src="https://i.imgur.com/NwQCbwA.jpg" alt="mayank-avatar" />
-                </picture>
-                <div className="ui vertical segment">
-                    <p className="about-description">
-                        Hi, My name is mayank I am a Web developer from Mumbai.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
-                    </p>
+                <div className="ui divider"></div>
+                <div>
+                    <picture>
+                        <img className="ui centered small circular image about-image" src="https://i.imgur.com/NwQCbwA.jpg" alt="mayank-avatar" />
+                    </picture>
+                    <div className="ui vertical segment about-description">
+                        <p>
+                            Hi, My name is mayank I am a Web developer from Mumbai.
+                        </p>
+                    </div>
                 </div>
             </div>
-        
 
-                
         </div>
     )
 }

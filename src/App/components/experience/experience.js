@@ -2,28 +2,30 @@ import React from 'react';
 
 const experienceStyle = {
     padding: '3%',
-    'padding-top': '0.5%'
+
+    paddingTop: '0.5%'
 }
 
-export const Experience = () => {
+export const Experience = (props) => {
+    const {columnWidth, backgroundStyle} = props
     return (
-        <div className="six wide column" style={experienceStyle}>
-            <div className="ui segment ui items experience-item">
-                <h3 className="ui header">Experience</h3>
-                <div className="ui divider"></div>
-                <div className="item">
-                    <div className="image">
-                        <img src="http://dashboard.insightheroes.co/modules/core/client/img/insight-images/ih_logo_signin.png" alt="IH_LOGO" />
-                    </div>
-                    <div className="content">
-                        <div className="header">
-                            Insight Heroes
+        <div className={columnWidth} style={experienceStyle}>
+            <div className="ui segment experience-item" style={backgroundStyle}>
+                <div className="ui items">
+                    <h3 className="ui header" style={{color: 'white'}}>Experience</h3>
+                    <div className="ui divider"></div>
+                    <div className="item">
+                        <div className="ui small image">
+                            <img src="http://dashboard.insightheroes.co/modules/core/client/img/insight-images/ih_logo_signin.png" alt="IH_LOGO" />
                         </div>
-                        <div className="meta">
-                            <span>FullStack Developer</span>
-                        </div>
-                        <div className="description">
-                            <p>Lorem</p>
+                        <div className="content">
+                            <h3 className="header" style={{color:'white'}}>
+                                Insight Heroes
+                            </h3>
+                            <div className="meta">
+                                <span>FullStack Developer</span><span>(July 2018 - March 2019)</span>
+                            </div>
+
                         </div>
                     </div>
                 </div>

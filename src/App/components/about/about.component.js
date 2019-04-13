@@ -42,6 +42,7 @@ export const About = (props) => {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }

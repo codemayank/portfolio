@@ -32,6 +32,7 @@ export const Skill = (props) => {
     const skillsView = skills.map(skill => {
         return (
             <div className="four wide column">
+
                 {skill.logo}
             </div>
         )
@@ -41,6 +42,7 @@ export const Skill = (props) => {
         <div className={columnWidth} style={skillStyle}>
             <div className="ui segment" style={backgroundStyle}>
                 <h3 className="ui header" style={{color: 'white'}}>Skills</h3>
+
                 <div className="ui divider"></div>
                 <div className="ui grid">
                     {skillsView}

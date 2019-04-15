@@ -2,6 +2,7 @@ import React from 'react';
 
 const experienceStyle = {
     padding: '3%',
+
     paddingTop: '0.5%'
 }
 
@@ -24,6 +25,7 @@ export const Experience = (props) => {
                             <div className="meta">
                                 <span>FullStack Developer</span><span>(July 2018 - March 2019)</span>
                             </div>
+
                         </div>
                     </div>
                 </div>

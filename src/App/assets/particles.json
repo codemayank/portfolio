@@ -11,13 +11,13 @@
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle",
+      "type": "edge",
       "stroke": {
         "width": 0,
-        "color": "#e3d6d6"
+        "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 4
       },
       "image": {
         "src": "img/github.svg",
@@ -26,17 +26,17 @@
       }
     },
     "opacity": {
-      "value": 0.9299789953020032,
+      "value": 0.6931387233500107,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 8.95609094870015,
         "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 4.047567007471811,
       "random": true,
       "anim": {
         "enable": false,
@@ -54,15 +54,15 @@
     },
     "move": {
       "enable": true,
-      "speed": 6,
-      "direction": "bottom-left",
+      "speed": 4.857080408966173,
+      "direction": "none",
       "random": true,
       "straight": false,
-      "out_mode": "out",
+      "out_mode": "bounce",
       "bounce": false,
       "attract": {
-        "enable": false,
-        "rotateX": 600,
+        "enable": true,
+        "rotateX": 485.70804089661726,
         "rotateY": 1200
       }
     }

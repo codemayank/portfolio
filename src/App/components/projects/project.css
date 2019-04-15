@@ -14,3 +14,7 @@
 div p, span{
     color: white;
 }
+
+a {
+    color: rgb(9, 9, 236) !important;
+}

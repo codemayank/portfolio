@@ -30,7 +30,6 @@ export const Project = (props) => {
                         <div className="content">
                             <a href="https://tranquil-taiga-89202.herokuapp.com/#!/" className="header" target="blank">Customer Support</a>
                             <a href="https://github.com/codemayank/customer-support" target="blank"><i className="fab fa-github fa-2x"></i></a>
-
                             <div className="meta">
                                 <span className="cinema"></span>
                             </div>
